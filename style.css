@@ -12,7 +12,7 @@
 
 #comp-side {
     background-color: cadetblue;
-    height: 50vh;
+    height: 50dvh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -36,7 +36,7 @@
 
 #player-side {
     background-color: rgb(241, 167, 48);
-    height: 50vh;
+    height: 50dvh;
     display: flex;
     flex-direction: column;
     align-items: center;
