@@ -72,7 +72,7 @@ function imageClick(e) {
 
 
         if(playerScore > compScore) finalDeclaration.textContent = "Congratulations!🎉🎊 You won this round."
-        else if(playerScore > compScore) finalDeclaration.textContent = "Computer Won☹️Try Again."
+        else if(compScore > playerScore) finalDeclaration.textContent = "Computer Won☹️Try Again."
     }
 
 }
