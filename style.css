@@ -94,12 +94,10 @@
 
 
 #winner-check{
-    width: 200px;
-    height: 50px;
     position: absolute;
     background-color: maroon;
     color: white;
-    padding: 6px;
+    padding: 15px 10px;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
@@ -230,12 +228,10 @@
     }
 
     #winner-check{
-        width: 90px;
-        height: 40px;
         position: absolute;
         background-color: maroon;
         color: white;
-        padding: 6px;
+        padding: 5px 10px;
         top: 50%;
         left: 50%;
         transform: translate(-50%,-50%);
