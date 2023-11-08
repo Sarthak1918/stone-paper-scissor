@@ -68,8 +68,8 @@
 
 #leader-board{
     position: absolute;
-    top: 10px;
-    right: 30px;
+    top: 0px;
+    right: 0px;
     background: black;
     color: white;
     padding: 10px;
@@ -152,10 +152,6 @@
 }
 
 
-
-
-/* MEDIA QUERy */
-
 @keyframes handshake{
     0%{
         transform: rotateY(0deg);
@@ -165,6 +161,10 @@
     }
 }
 
+
+
+
+/* MEDIA QUERy */
 
 @media screen and (max-width:576px){
     #leader-board{
@@ -205,7 +205,7 @@
 
     #comp-choice{
         position: absolute;
-        top: 130px;
+        top: 120px;
     }
 
 
@@ -226,8 +226,24 @@
 
     #player-choice{
         position: absolute;
-        bottom: 130px;
+        bottom: 100px;
+    }
+
+    #winner-check{
+        width: 90px;
+        height: 40px;
+        position: absolute;
+        background-color: maroon;
+        color: white;
+        padding: 6px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
 
 }
+
