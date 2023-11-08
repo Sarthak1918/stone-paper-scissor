@@ -40,7 +40,7 @@ function handleKeypress(e) {
 
 function toggleInput(e) {
     if (!playerNameElem.querySelector("input")) {
-        playerNameElem.innerHTML = `<input oninput="handleChange(event)" onkeydown="handleKeypress(event)" autofocus value="${playerName}" />`;
+        playerNameElem.innerHTML = `<input class="name-change-input" oninput="handleChange(event)" onkeydown="handleKeypress(event)" autofocus value="${playerName}" />`;
     }
 }
 

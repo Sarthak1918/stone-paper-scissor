@@ -16,7 +16,7 @@
 
 
 #comp-side {
-    background-color: blue;
+    background-color: cadetblue;
     height: 50vh;
     display: flex;
     flex-direction: column;
@@ -40,7 +40,7 @@
 /* player side */
 
 #player-side {
-    background-color: rgb(3, 119, 21);
+    background-color: rgb(241, 167, 48);
     height: 50vh;
     display: flex;
     flex-direction: column;
@@ -91,14 +91,6 @@
     background-color: rgb(214, 83, 83);
 }
 
-#prev-leader-board{
-    position: absolute;
-    top: 10px;
-    left: 30px;
-    background: black;
-    color: white;
-    padding: 10px;
-}
 
 
 #winner-check{
@@ -149,6 +141,21 @@
     animation: handshake 1s ease 0s forwards;
 }
 
+
+.name-change-input{
+    padding: 4px;
+    font-size: 17px;
+    outline: none;
+    border: none;
+    text-align: center;
+    background-color: rgb(218, 218, 218);
+}
+
+
+
+
+/* MEDIA QUERy */
+
 @keyframes handshake{
     0%{
         transform: rotateY(0deg);
@@ -156,4 +163,71 @@
     100%{
         transform: rotateY(360deg);
     }
+}
+
+
+@media screen and (max-width:576px){
+    #leader-board{
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        background: black;
+        color: white;
+        padding: 0px;
+    }
+
+    #leader-board table,td{
+        padding: 1px;
+    }
+
+    
+    #leader-board button{
+        cursor: pointer;
+        border: none;
+        border-radius: 4px;
+        padding: 2px 8px;
+    }
+
+
+    #comp-side h1{
+        position: absolute;
+        left:10px
+    }
+
+    #comp-side .images{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 10px;
+        gap: 20px;
+    }
+
+    #comp-choice{
+        position: absolute;
+        top: 130px;
+    }
+
+
+    #player-side .images{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        bottom: 60px;
+        right: 20px;
+        gap: 20px;
+    }
+
+    #player-side h1{
+        position: absolute;
+        right:30px;
+        bottom : 10px;
+    }
+
+    #player-choice{
+        position: absolute;
+        bottom: 130px;
+    }
+
+
 }
