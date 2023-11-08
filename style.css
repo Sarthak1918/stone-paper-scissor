@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Black Ops One';
+}
+
+.container{
+    position: relative;
+}
+
+
+
+ /* computer side */
+
+
+#comp-side {
+    background-color: blue;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding-top: 10px;
+}
+
+#comp-side .images img {
+    width: 50px;
+    transform: rotate(180deg);
+}
+
+
+#comp-side #comp-choice #comp-choice-img {
+    width: 200px;
+    rotate : 180deg;
+}
+
+
+/* player side */
+
+#player-side {
+    background-color: rgb(3, 119, 21);
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 15px;
+    padding-top: 10px;
+}
+
+#player-side .images img {
+    width: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#player-side .images img:hover{
+    scale: 1.2;
+}
+
+#player-side #player-choice #player-choice-img {
+    width: 200px;
+}
+
+
+
+#leader-board{
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    background: black;
+    color: white;
+    padding: 10px;
+}
+
+#leader-board table tr,td,th{
+    padding: 5px;
+}
+
+#leader-board button{
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    margin-block: 10px;
+    padding: 10px;
+}
+#leader-board button:hover{
+    color: white;
+    background-color: rgb(214, 83, 83);
+}
+
+#prev-leader-board{
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    background: black;
+    color: white;
+    padding: 10px;
+}
+
+
+#winner-check{
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    background-color: maroon;
+    color: white;
+    padding: 6px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.overlay{
+    position: absolute;
+    z-index: 999;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.539);
+    top: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+#winner-declare{
+    text-align: center;
+    background-color: aliceblue;
+    width: 500px;
+    padding: 25px;
+}
+
+#play-again-btn{
+    background-color: maroon;
+    color: aliceblue;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.shake{
+    animation: handshake 1s ease 0s forwards;
+}
+
+@keyframes handshake{
+    0%{
+        transform: rotateY(0deg);
+    }
+    100%{
+        transform: rotateY(360deg);
+    }
+}

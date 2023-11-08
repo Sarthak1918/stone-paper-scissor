@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="container">
+        <section id="comp-side">
+            <h1>computer</h1>
+            <div class="images">
+                <img id="scissor" src="./assets/scissor.png" alt="scissor" name="scissor">
+                <img id="paper" src="./assets/paper.png" alt="paper" name="paper">
+                <img id="stone" src="./assets/stone.png" alt="stone" name="stone">
+            </div>
+            <div id="comp-choice">
+                <!-- <img id="comp-choice-img" src="./assets/fist.png" alt="fist"> -->
+            </div>
+        </section>
+
+
+        <section id="player-side">
+            <div id="player-choice">
+                <!-- here image will be shown which the player choose -->
+                <!-- <img id="player-choice-img" src="./assets/fist.png" alt="fist"> -->
+            </div>
+            <div class="images">
+                <img onclick="imageClick(event)" id="scissor" src="./assets/scissor.png" alt="scissor" name="scissor">
+                <img onclick="imageClick(event)" id="paper" src="./assets/paper.png" alt="paper" name="paper">
+                <img onclick="imageClick(event)" id="stone" src="./assets/stone.png" alt="stone" name="stone">
+            </div>
+            <h1 id="player-name" onclick="toggleInput(event)">You</h1>
+        </section>
+    </div>
+
+    <div id="leader-board">
+        <table border="2px solid black;">
+            <tr>
+                <th>Comp</th>
+                <th id="player-grid">Player</th>
+            </tr>
+            <tr>
+                <td id="comp-score">0</td>
+                <td id="player-score">0</td>
+            </tr>
+        </table>
+        <center><button onclick="reset()">Reset</button></center>
+    </div>
+
+
+
+    <div id="winner-check">
+        <h3></h3>
+    </div>
+
+
+    <div class="overlay">
+        <div id="winner-declare" style="display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 10px;">
+            <p id="final-declaration">Congratulations! You won this round.</p>
+
+            <div style="display: flex; align-items: center; justify-content: center; gap: 20px;">
+                <div>
+                    <h3>Computer</h3>
+                    <h4 id="prev-comp-score">0</h4>
+                </div>
+                <h1>-</h1>
+                <div>
+                    <h3>Player</h3>
+                    <h4 id="prev-player-score">0</h4>
+                </div>
+                
+            </div>
+
+            <button id="play-again-btn" onclick="reset(event,true)">Play Again</button>
+
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
