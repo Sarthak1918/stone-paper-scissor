@@ -200,7 +200,7 @@
 
     #comp-choice{
         position: absolute;
-        top: 120px;
+        top: 100px;
     }
 
 
@@ -221,7 +221,7 @@
 
     #player-choice{
         position: absolute;
-        bottom: 100px;
+        bottom: 60px;
     }
 
      #winner-check{
